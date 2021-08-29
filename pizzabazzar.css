@@ -1,0 +1,229 @@
+/* Default Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-center{
+    text-align: center;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.5rem;
+}
+.h-secondary{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+}
+
+
+/* Header Section */
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: sticky;
+}
+#navbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(15, 1, 1);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 5px 60px;
+}
+#navbar img{
+    height: 50px;
+    padding: 2px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 3px;
+}
+#navbar ul li a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    background: white;
+    color: black;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+}
+#home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(Images/spaghetti-1932466_960_720.jpg) no-repeat center /cover;
+    width: 100%;
+    height: 460px;
+    z-index: -2;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    padding: 25px 0;
+}
+#home p{
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+button{
+    background: linear-gradient(rgb(61, 7, 7), rgb(141, 75, 75));
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+button:hover{
+    background: linear-gradient(rgb(141, 75, 75), rgb(61, 7, 7));
+}
+
+
+/* Services Section */
+#services{
+    margin-top: 60px;
+}
+.service-item{
+    display: flex;
+    margin: 20px;
+}
+.service-item .box{
+    border: 2px solid brown;
+    margin: 10px 40px;
+    padding: 25px;
+    background: #f2f2f2;
+    border-radius: 0 20px;
+    text-align: justify;
+    font-family: 'Bree Serif', serif;
+}
+.service-item img{
+    height: 180px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Payment Section */
+.payment-section{
+    margin: 20px 0;
+}
+.payments{
+    position: relative;
+    height: 162px;
+}
+.payments::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(Images/ecommerce-2140603_960_720.webp) no-repeat center / cover;
+    width: 100%;
+    height: 162px;
+    z-index: -1;
+    opacity: 0.5;
+}
+.payment-section img{
+    height: 150px;
+}
+.payments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Feedback Section */
+.feedbacks{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.feedbacks::before{
+    content: '';
+    background: url(Images/feedback-1977987_960_720.webp) no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 278px;
+    z-index: -1;
+    opacity: 0.6;
+}
+.feedbacks input[type="text"],
+.feedbacks textarea{
+    padding: 5px 10px;
+    background: #3B1212;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+.feedbacks input[type="submit"],
+.feedbacks input[type="reset"]{
+    padding: 5px 10px;
+    background: linear-gradient(rgb(71, 13, 13), rgb(158, 107, 107)) ;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.feedbacks input[type="submit"]:hover,
+.feedbacks input[type="reset"]:hover{
+    background: linear-gradient(rgb(158, 107, 107), rgb(71, 13, 13));
+}
+.feedbacks label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+.feedbacks form{
+    width: 40%;
+    margin: 15px 0;
+}
+
+
+/* Footer */
+footer{
+	background: black;
+	color: white;
+	padding: 12px 20px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    background: rgb(24, 24, 51);
+    border-radius: 3px;
+    padding: 2px 3px;
+}
+footer a:hover{
+    color: rgb(207, 177, 177);
+}
